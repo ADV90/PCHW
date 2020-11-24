@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>HomeWork_3</title>
+</head>
+    <style>
+        input{
+            margin-bottom: 2px
+        }
+    </style>
+<body style="color:black; background-color:bisque">
+    <header>
+        <h1>Registration form</h1>
+    </header>
+    <section>
+        <form action="#" method="get" name="HomeWork_3_Form">
+            <fieldset>
+                <legend>Контактная информация</legend>
+                <p><label for="first_name">Имя <em>*</em></label></p>
+                <input type="text" id="first_name" name="first_name" placeholder="Введите ваше имя" required autofocus>
+                
+                <p><label for="last_name">Фамилия <em>*</em></label></p>
+                <input type="text" id="last_name" name="last_name" placeholder="Введите вашу фамилию" required>
+                
+                <p><label for="email">E-mail  <em>*</em></label></p>
+                <input type="email" id="email" name="email" placeholder="Введите E-mail" required>
+                
+                <p><label for="birtday">Дата рождения</label></p>
+                <input type="date" id="birtday" name="date">
+                
+                <p><label for="tel">Контактный телефон  <em>*</em></label></p>
+                <input type="tel" id="tel" name="tel" placeholder="+38(0XX)XXX-XX-XX" pattern="+38(0-[0-9]{2})[0-9]{3}-[0-9]{2}-[0-9]{2}" required>
+            </fieldset>
+            
+            <fieldset>
+                <legend>Параметры заказа</legend>
+                
+                <div>
+                <p><label for="size">Выберите размер</label>
+                    <br>
+                    <input type="radio" name="size" id="xs" value="xs">
+                    <label for="xs">XS</label>
+                    <br>
+                    <input type="radio" name="size" id="s" value="s">
+                    <label for="s">S</label>
+                    <br>
+                    <input type="radio" name="size" id="m" value="m">
+                    <label for="m">M</label>
+                    <br>
+                    <input type="radio" name="size" id="l" value="l">
+                    <label for="l">L</label>
+                </div>
+                
+                <div>
+                <p><label for="color">Выберите цвет</label>
+                <br>
+                   <select name="color">
+                        <option disabled selected>Выберите цвет</option>
+                        <option value="red">Красный</option>
+                        <option value="blue">Синий</option>
+                        <option value="white">Белый</option>
+                        <option value="black">Черный</option>
+                    </select>
+                </div>
+                
+            </fieldset>
+            
+            <fieldset>
+                <legend>Дополнительные опции</legend>
+                
+                <br>
+                <input type="checkbox" name="options" id="delivery" value="delivery">
+                <label for="delivery">Доставка</label>
+                
+                <br>
+                <input type="checkbox" name="options" id="payment" value="payment">
+                <label for="payment">Оплата картой</label>
+                
+                <br>
+                <input type="checkbox" name="options" id="callback" value="callback">
+                <label for="callback">Перезвоните мне</label>
+                
+            </fieldset>
+            
+            <br>
+            <button type="submit">
+               <strong>Отправить</strong>
+            </button>
+       </form>
+    </section>
+    <footer>
+        <div>
+            <p>
+                © All Rights Reserved 2020
+            </p>
+        </div>
+    </footer>
+</body>
+</html>
