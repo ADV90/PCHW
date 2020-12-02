@@ -38,10 +38,14 @@ label{
     display: block;
     height: 2em;
     background-color: #86819B;
+    border-bottom: 2px solid #86819B;
+    border-top: 2px solid #86819B;
 }
 
 label:nth-child(2n){
     background-color: #797490;
+    border-bottom: 2px solid #797490;
+    border-top: 2px solid #797490;
 }
 
 label:hover{
