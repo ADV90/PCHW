@@ -1,0 +1,112 @@
+* {
+  box-sizing: border-box;
+  transition: all 0.1s ease-in;
+}
+html {
+  height: 100%;
+}
+html,
+body {
+  min-height: 100%;
+}
+body {
+  font: 14px;
+  border: 25px solid #2B81AC;
+  background-color: #3399CC;
+  color: #F9F9F9;
+}
+.header,
+.footer {
+  padding: 15px 0;
+  color: #ffffff;
+}
+.container {
+  margin: 0 auto;
+  max-width: 70%;
+}
+.cities {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 0;
+  padding: 3px;
+  background: #FFF;
+}
+.cities:hover > li {
+  opacity: .6;
+}
+.cities li {
+  background: #7a7593;
+  border: 0 solid #fff;
+  text-align: center;
+  display: inline-block;
+  padding: 15px 5px;
+  border: 3px solid #fff;
+  font-size: 18px;
+  width: 25%;
+}
+.cities li.span-2 {
+  width: 50%;
+}
+.cities li:hover {
+  opacity: 1;
+}
+.cities li:active {
+  background: #ffffff;
+}
+.cities li:first-child {
+  width: 50%;
+}
+.cities li:last-child {
+  width: 100%;
+}
+.cities li .city-name {
+  font-weight: normal;
+  font-size: 18px;
+  margin-bottom: 15px;
+}
+.cities li .temperatue:after {
+  content: "°C";
+}
+.cities li .temperatue,
+.cities li .wi {
+  display: inline-block;
+  vertical-align: middle;
+  color: rgba(255, 255, 255, 0.7);
+}
+.cities li .wi {
+  font-size: 32px;
+}
+.cities li:nth-child(1) {
+  background: #3399CC;
+}
+.cities li:nth-child(2) {
+  background: #33CCCC;
+}
+.cities li:nth-child(3) {
+  background: #996699;
+}
+.cities li:nth-child(4) {
+  background: #C24747;
+}
+.cities li:nth-child(5) {
+  background: #e2674a;
+}
+.cities li:nth-child(6) {
+  background: #FFCC66;
+}
+.cities li:nth-child(7) {
+  background: #99CC99;
+}
+.cities li:nth-child(8) {
+  background: #669999;
+}
+.cities .san-francisco {
+  background: #CC6699;
+}
+.cities .tokyo {
+  background: #339966;
+}
+.cities .sydney {
+  background: #666699;
+}
